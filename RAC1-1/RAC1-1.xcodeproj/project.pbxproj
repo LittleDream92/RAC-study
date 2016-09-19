@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A85405301D8FB73B00BB649F /* flags.plist in Resources */ = {isa = PBXBuildFile; fileRef = A854052F1D8FB73B00BB649F /* flags.plist */; };
 		A8C92AF11D8F7EA100819B1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C92AF01D8F7EA100819B1C /* main.m */; };
 		A8C92AF41D8F7EA100819B1C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C92AF31D8F7EA100819B1C /* AppDelegate.m */; };
 		A8C92AF71D8F7EA100819B1C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A8C92AF61D8F7EA100819B1C /* ViewController.m */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		241B324C09F7FB41B619EF4B /* libPods-RAC1-1.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RAC1-1.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A854052F1D8FB73B00BB649F /* flags.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = flags.plist; sourceTree = "<group>"; };
 		A8C92AEC1D8F7EA100819B1C /* RAC1-1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RAC1-1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8C92AF01D8F7EA100819B1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A8C92AF21D8F7EA100819B1C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 		A8C92AEE1D8F7EA100819B1C /* RAC1-1 */ = {
 			isa = PBXGroup;
 			children = (
+				A854052F1D8FB73B00BB649F /* flags.plist */,
 				A8C92AF21D8F7EA100819B1C /* AppDelegate.h */,
 				A8C92AF31D8F7EA100819B1C /* AppDelegate.m */,
 				A8C92AF51D8F7EA100819B1C /* ViewController.h */,
@@ -170,6 +173,7 @@
 			files = (
 				A8C92AFF1D8F7EA100819B1C /* LaunchScreen.storyboard in Resources */,
 				A8C92AFC1D8F7EA100819B1C /* Assets.xcassets in Resources */,
+				A85405301D8FB73B00BB649F /* flags.plist in Resources */,
 				A8C92AFA1D8F7EA100819B1C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
