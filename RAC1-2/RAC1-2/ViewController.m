@@ -11,6 +11,12 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *label;
+@property (weak, nonatomic) IBOutlet UITextField *input;
+
+@property (nonatomic, strong) RACSignal *signal;
+
+
 @end
 
 @implementation ViewController
@@ -33,6 +39,9 @@
      */
     [self commandAction];
     
+    
+    //六、RAC常用的宏
+    [self racCommonSetting];
 }
 
 
@@ -240,6 +249,72 @@
     
     //2、执行命令
     [command execute:@1];
+}
+
+
+#pragma mark - 6、RAC常用的宏
+//RAC有很多强大而方便的宏
+- (void)racCommonSetting {
+    [self test1];
+    [self test2];
+    [self test3];
+    [self test4];
+}
+
+- (void)test1 {
+    //绑定某一对象的某个属性，发出信号时，该对象的属性值做出相应操作
+    //例如：给label的text属性绑定一个文本框改变的信号
+//    [self.input.rac_textSignal subscribeNext:^(id x) {
+//        self.label.text = x;
+//    }];
+    
+    //宏定义的简化写法
+    RAC(self.label, text) = self.input.rac_textSignal;
+    //监听label
+    [RACObserve(self.label, text) subscribeNext:^(id x) {
+        NSLog(@"test1:label的文字变了");
+    }];
+
+}
+
+/**
+    KVO
+    RACObserveL:快速的监听某个对象的某个属性改变
+     返回的是一个信号,对象的某个属性改变的信号
+ */
+- (void)test2 {
+    [RACObserve(self.view, center) subscribeNext:^(id x) {
+        NSLog(@"test2:%@", x);
+    }];
+}
+
+//循环引用问题
+- (void)test3 {
+    @weakify(self)
+    
+    RACSignal *signal = [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        @strongify(self)
+        NSLog(@"test3:%@", self.view);
+        return nil;
+    }];
+    _signal = signal;
+}
+
+
+/**
+ * 元祖
+ * 快速包装一个元组
+ * 把包装的类型放在宏的参数里面,就会自动包装
+ */
+- (void)test4 {
+    RACTuple *tuple = RACTuplePack(@1, @2);
+    // 宏的参数类型要和元祖中元素类型一致， 右边为要解析的元祖。
+    
+    RACTupleUnpack(NSNumber *num1, NSNumber *num2, NSNumber *num3) = tuple;
+    NSLog(@"1:%@, 2:%@, 3:%@", num1, num2, num3);
+    
+    //即使需要解析的元祖里只有两个元素，而我写的解析出来三个元素，依旧没有崩溃，打印： 1:1, 2:2, 3:(null)
+    
 }
 
 #pragma mark -
