@@ -1,0 +1,5 @@
+target ‘RAC1-3’ do
+
+pod 'ReactiveCocoa', '~> 2.5'
+
+end
