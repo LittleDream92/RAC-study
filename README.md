@@ -4,6 +4,13 @@
 
 ####跟着原文学习了RAC，对RAC＋MVVM的实际应用有了一定的了解，原文的思路很清晰，有助于新手学习RAC。
 
+		RAC1-1:RACSignal、RACSubject、RACSequence
+		RAC1-2：RACMulticastConnection、RACCommand、RAC常用宏
+		RAC1-3：RAC-bind、RAC-过滤、RAC-映射、RAC-组合
+		RAC1-4：login example
+		RAC1-5：login example2
+		RAC1-6：RAC＋MVVM＋Networking
+
 本文从以以下几个方面学习RAC
  
 
@@ -18,6 +25,11 @@
  - RAC-映射
  - RAC-组合
  - RAC+MVVM-网络请求
+
+
+
+
+
 
 ###RACSignal
 
