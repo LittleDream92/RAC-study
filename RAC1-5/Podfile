@@ -1,6 +1,5 @@
 target ‘RAC1-4’ do
 
 pod 'ReactiveCocoa', '~> 2.5'
-pod ‘AFNetworking’
 
 end

@@ -31,7 +31,7 @@
                 
             } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
                 // 请求成功的时候调用
-                
+                NSLog(@"%@", responseObject);
                 //2、处理数据
                 // 在这里就可以拿到数据，将其丢出去
                 NSArray *dictArr = responseObject[@"books"];
