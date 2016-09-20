@@ -14,7 +14,7 @@
 		A82FC3F21D90DB3A00C333BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82FC3F01D90DB3A00C333BA /* Main.storyboard */; };
 		A82FC3F41D90DB3A00C333BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A82FC3F31D90DB3A00C333BA /* Assets.xcassets */; };
 		A82FC3F71D90DB3A00C333BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A82FC3F51D90DB3A00C333BA /* LaunchScreen.storyboard */; };
-		A82FC4001D90DC0000C333BA /* LoginViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82FC3FF1D90DC0000C333BA /* LoginViewModel.m */; };
+		A82FC4031D90E33100C333BA /* RequestViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = A82FC4021D90E33100C333BA /* RequestViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		A82FC3F31D90DB3A00C333BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A82FC3F61D90DB3A00C333BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A82FC3F81D90DB3A00C333BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A82FC3FE1D90DC0000C333BA /* LoginViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewModel.h; sourceTree = "<group>"; };
-		A82FC3FF1D90DC0000C333BA /* LoginViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewModel.m; sourceTree = "<group>"; };
+		A82FC4011D90E33100C333BA /* RequestViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequestViewModel.h; sourceTree = "<group>"; };
+		A82FC4021D90E33100C333BA /* RequestViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequestViewModel.m; sourceTree = "<group>"; };
 		E3BB48C6CADFAD6D7B5C667A /* libPods-RAC1-4.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RAC1-4.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -81,9 +81,9 @@
 				A82FC3EB1D90DB3A00C333BA /* AppDelegate.m */,
 				A82FC3ED1D90DB3A00C333BA /* ViewController.h */,
 				A82FC3EE1D90DB3A00C333BA /* ViewController.m */,
-				A82FC3FE1D90DC0000C333BA /* LoginViewModel.h */,
-				A82FC3FF1D90DC0000C333BA /* LoginViewModel.m */,
 				A82FC3F01D90DB3A00C333BA /* Main.storyboard */,
+				A82FC4011D90E33100C333BA /* RequestViewModel.h */,
+				A82FC4021D90E33100C333BA /* RequestViewModel.m */,
 				A82FC3F31D90DB3A00C333BA /* Assets.xcassets */,
 				A82FC3F51D90DB3A00C333BA /* LaunchScreen.storyboard */,
 				A82FC3F81D90DB3A00C333BA /* Info.plist */,
@@ -229,9 +229,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A82FC4001D90DC0000C333BA /* LoginViewModel.m in Sources */,
 				A82FC3EF1D90DB3A00C333BA /* ViewController.m in Sources */,
 				A82FC3EC1D90DB3A00C333BA /* AppDelegate.m in Sources */,
+				A82FC4031D90E33100C333BA /* RequestViewModel.m in Sources */,
 				A82FC3E91D90DB3A00C333BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
