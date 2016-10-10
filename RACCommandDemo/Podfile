@@ -1,0 +1,9 @@
+target ‘RACCommandDemo’ do
+
+pod ‘Masonry’ 
+pod ‘AFNetworking’
+pod 'ReactiveCocoa', '~>2.1.0'
+pod 'AFNetworking-RACExtensions', :git => 'https://github.com/knshiro/AFNetworking-RACExtensions.git'
+pod 'libextobjc', '~>0.3'
+
+end
