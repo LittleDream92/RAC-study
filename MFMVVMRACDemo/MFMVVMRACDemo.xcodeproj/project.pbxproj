@@ -12,6 +12,8 @@
 		A8AF00D21DC98C25000AFF03 /* MFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AF00D11DC98C25000AFF03 /* MFAppDelegate.m */; };
 		A8AF00DA1DC98C25000AFF03 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8AF00D91DC98C25000AFF03 /* Images.xcassets */; };
 		A8AF00DD1DC98C25000AFF03 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8AF00DB1DC98C25000AFF03 /* LaunchScreen.storyboard */; };
+		A8AF00F31DC99008000AFF03 /* MFViewModelServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AF00F21DC99008000AFF03 /* MFViewModelServiceImpl.m */; };
+		A8AF00F61DC990B5000AFF03 /* AppStoreServiceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = A8AF00F51DC990B5000AFF03 /* AppStoreServiceImpl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,11 @@
 		A8AF00DC1DC98C25000AFF03 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A8AF00DE1DC98C25000AFF03 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A8AF00E41DC98CA2000AFF03 /* MFMVVMRACDemo.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFMVVMRACDemo.pch; sourceTree = "<group>"; };
+		A8AF00F11DC99008000AFF03 /* MFViewModelServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MFViewModelServiceImpl.h; sourceTree = "<group>"; };
+		A8AF00F21DC99008000AFF03 /* MFViewModelServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MFViewModelServiceImpl.m; sourceTree = "<group>"; };
+		A8AF00F41DC990B5000AFF03 /* AppStoreServiceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStoreServiceImpl.h; sourceTree = "<group>"; };
+		A8AF00F51DC990B5000AFF03 /* AppStoreServiceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStoreServiceImpl.m; sourceTree = "<group>"; };
+		A8AF00F71DC990E3000AFF03 /* AppStoreService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppStoreService.h; sourceTree = "<group>"; };
 		E7B5F35563CDB0332B95E1CA /* Pods-MFMVVMRACDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MFMVVMRACDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-MFMVVMRACDemo/Pods-MFMVVMRACDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,6 +112,9 @@
 		A8AF00E81DC98DC0000AFF03 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				A8AF00F41DC990B5000AFF03 /* AppStoreServiceImpl.h */,
+				A8AF00F51DC990B5000AFF03 /* AppStoreServiceImpl.m */,
+				A8AF00F71DC990E3000AFF03 /* AppStoreService.h */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -133,8 +143,18 @@
 		A8AF00EC1DC98DC0000AFF03 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A8AF00ED1DC98F75000AFF03 /* BaseClass */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A8AF00ED1DC98F75000AFF03 /* BaseClass */ = {
+			isa = PBXGroup;
+			children = (
+				A8AF00F11DC99008000AFF03 /* MFViewModelServiceImpl.h */,
+				A8AF00F21DC99008000AFF03 /* MFViewModelServiceImpl.m */,
+			);
+			path = BaseClass;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,6 +280,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A8AF00D21DC98C25000AFF03 /* MFAppDelegate.m in Sources */,
+				A8AF00F61DC990B5000AFF03 /* AppStoreServiceImpl.m in Sources */,
+				A8AF00F31DC99008000AFF03 /* MFViewModelServiceImpl.m in Sources */,
 				A8AF00CF1DC98C25000AFF03 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
