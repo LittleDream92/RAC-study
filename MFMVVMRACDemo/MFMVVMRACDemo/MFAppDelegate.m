@@ -7,8 +7,12 @@
 //
 
 #import "MFAppDelegate.h"
+#import "MFViewModelServiceImpl.h"
 
 @interface MFAppDelegate ()
+
+/** app Delegate的services */
+@property (nonatomic, strong) MFViewModelServiceImpl *services;
 
 @end
 
@@ -18,7 +22,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    self.window.backgroundColor = [UIColor whiteColor];
+    [self.services ];
     [self.window makeKeyAndVisible];
     
     return YES;

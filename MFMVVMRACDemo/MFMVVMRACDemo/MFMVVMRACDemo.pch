@@ -9,7 +9,89 @@
 #ifndef MFMVVMRACDemo_pch
 #define MFMVVMRACDemo_pch
 
-// Include any system framework and library headers here that should be included in all compilation units.
-// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+/*
+ *  #ifdef __OBJC__表示只被OC语言引用
+ */
+
+/*
+    Application
+    UIKit
+    Cocoa Touch
+    Media
+    Core Services
+    Core OS
+ */
+
+/*
+ Cocoa框架
+    一、Cocoa是什么：
+        Cocoa是OS X和iOS操作系统的程序的运行环境。
+ 
+    二、Cocoa框架：
+        iOS中，Cocoa框架中最重要最基本的两个框架是Foundation和UIKit框架。
+        foundation框架：与界面无关的类基本是Foundation框架的。
+        UIKit框架：与界面相关的。
+ 
+
+ */
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+    #import <MobileCoreServices/MobileCoreServices.h>   //Core Services
+    #import <ReactiveCocoa/ReactiveCocoa.h>             //RAC
+    #import <SDWebImage/UIImageView+WebCache.h>         //SDWebImage
+    #import <SDWebImage/UIButton+WebCache.h>            //SDWebImage
+    #import "UIImageView+UIActivityIndicatorForSDWebImage.h"    //
+    #import <objc/runtime.h>                            //run time进行时
+    #import "MBProgressHUD.h"                           //MBProgressHUD
+    #import "Ono.h"                                     //Ono: XML/HTML 解析库
+    #import "UMSocial.h"                                //友盟社会化组件
+    #import "UMSocialWechatHandler.h"
+    #import "UMSocialSinaHandler.h"
+    #import "UMSocialQQHandler.h"
+    #import "FMDB.h"                                    //数据库
+    #import <YYKit/YYKit.h>                             //一组庞大、功能丰富的iOS组件
+    #import <AFNetworking/AFNetworking.h>               //网络请求框架
+    #import "MKNetworkKit.h"                            //网络请求框架
+    #import "IQKeyboardManager.h"                       //解决键盘遮挡问题
+    #import "UIImage+Octicons.h"                        //Github上的图标字体
+    #import "NSString+Octicons.h"                       //Github上的图标字体
+    #import "SSKeychain.h"                              //轻量级的安全框架，钥匙串
+    #import "SVPullToRefresh.h"                         //下拉刷新和上拉加载更多
+    #import "WebViewJavascriptBridge.h"                 //OC与Javascript交互
+    #import "UIScrollView+EmptyDataSet.h"               //视图没有内容的时候展示空数据集
+    #import "GPUImage.h"                                //基于GPU图像和视频处理的开源iOS框架
+
+    #import "MRCConfig.h"
+    #import "MRCConstant.h"
+    #import "MFAppDelegate.h"
+
+//    #import "MRCUtil.h"
+//    #import "MRCErrors.h"
+//    #import <OctoKit/OctoKit.h>
+//    #import "MRCViewModelServices.h"
+//    #import "OCTUser+MRCPersistence.h"
+//    #import "OCTRepository+MRCPersistence.h"
+//#import "OCTClient+MRCRepository.h"
+//#import "OCTClient+MRCUser.h"
+//    #import "UIImage+MRCOcticons.h"
+//    #import "CBStoreHouseRefreshControl.h"
+//    #import "UIView+Borders.h"
+//    #import "OCTRef+MRCUtil.h"
+//    #import "SSKeychain+MRCUtil.h"
+//    #import "TWMessageBarManager.h"
+//    #import "MRCSearch.h"
+//    #import "MRCMemoryCache.h"
+//    #import "FMDatabaseQueue+MRCHelper.h"
+//    #import "MRCReactiveView.h"
+//    #import "NSURL+MRCLink.h"
+//    #import "NSMutableAttributedString+MRCEvents.h"
+//    #import "OCTEvent+MRCAttributedString.h"
+//    #import "OCTRef+MRCAdditions.h"
+//    #import "OCTEvent+MRCPersistence.h"
+//    #import "YYCache+MRCAdditions.h"
+
+#endif
+
 
 #endif /* MFMVVMRACDemo_pch */

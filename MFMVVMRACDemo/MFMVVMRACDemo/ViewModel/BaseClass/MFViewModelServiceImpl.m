@@ -7,6 +7,7 @@
 //
 
 #import "MFViewModelServiceImpl.h"
+#import "MRCViewModel.h"
 
 @implementation MFViewModelServiceImpl
 
@@ -20,6 +21,6 @@
     return self;
 }
 
-
+- (void)resetRootViewModel:(MRCViewModel *)viewModel {}
 
 @end
