@@ -6,13 +6,13 @@
 //  Copyright © 2016年 Meng Fan. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "MFAppDelegate.h"
 
-@interface AppDelegate ()
+@interface MFAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation MFAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
